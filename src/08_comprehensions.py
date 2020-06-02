@@ -1,5 +1,5 @@
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
-y = [x for x in range(6)]
+y = [x + 1 for x in range(5)]
 
 print (y)
 
@@ -21,6 +21,6 @@ print(y)
 # the user entered into list x.
 x = input("Enter comma-separated numbers: ").split(',')
 
-y = [num for num in x if int(num) %2 == 0]
+y = [num for num in x if int(num) % 2 == 0]
 
 print(y)

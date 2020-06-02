@@ -22,9 +22,14 @@ def isPrime(p):
     # If number is divisible by 2||3 it is not prime
     if( p % 2 == 0 or p % 3 == 0):
         return False
+    # This  above logic handles primes up until 23
+    
+    # This logic handles 29+ 
     # Initially set i to next possible prime
     i = 5
+    # while i * i <=p
     while(i * i <= p):
+        # Check if remainder of p%i\\p%i+1 is 0
         if(p % i == 0 or p % (i + 2) == 0):
             return False
         i = i + 6
